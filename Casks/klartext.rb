@@ -12,12 +12,6 @@ cask "klartext" do
   desc "Moderner Texteditor mit JSON/XML/YAML-Formatierung"
   homepage "https://github.com/klartext-app/klartext-app"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-    regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
-  end
-
   app "Klartext.app"
 
   zap trash: []
